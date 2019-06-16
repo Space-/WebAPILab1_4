@@ -112,6 +112,7 @@ namespace WebAPILab1_4.Controllers
             return Ok(book);
         }
 
+        // try http://localhost:63712/authors/2/books on browser
         [Route("~/authors/{authorId:int}/books")]
         public IHttpActionResult GetBooksByAuthor(int authorId)
         {
